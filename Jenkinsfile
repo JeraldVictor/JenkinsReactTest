@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage('Git Clone') {
+        steps {
+            sh 'git clone https://github.com/JeraldVictor/JenkinsReactTest .'
+        }
+    }
     stage('version test') {
       steps {
         sh 'node -v'
