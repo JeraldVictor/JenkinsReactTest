@@ -20,6 +20,11 @@
   "jest": {
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "coverageThreshold": {
+      "global": {
+        "lines": 90
+      }
     }
   },
   "eslintConfig": {
